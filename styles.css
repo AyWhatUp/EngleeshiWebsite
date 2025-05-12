@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('engleeshiBackground.jpg') no-repeat center center/cover;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.arabic-text {
+    font-family: 'Cairo', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: #ffffff;
+    color: #333;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.button.disabled {
+    background-color: #cccccc;
+    color: #666;
+    pointer-events: none; /* Makes the button non-clickable */
+}
+
+.coming-soon {
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 120px;
+    }
+
+    .arabic-text {
+        font-size: 20px;
+    }
+
+    .button {
+        display: block;
+        margin: 15px auto;
+        width: 80%;
+    }
+
+    .coming-soon {
+        font-size: 12px;
+    }
+}
