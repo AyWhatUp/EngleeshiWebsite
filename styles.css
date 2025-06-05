@@ -29,30 +29,20 @@ body {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.button {
-    display: inline-block;
-    padding: 15px 30px;
-    margin: 10px;
-    background-color: #ffffff;
-    color: #333;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    border-radius: 5px;
-    position: relative;
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-.button.disabled {
-    background-color: #cccccc;
-    color: #666;
+.store-button {
+    width: 150px;
+    transition: opacity 0.3s;
+}
+
+.store-button.disabled {
+    opacity: 0.5;
     pointer-events: none; /* Makes the button non-clickable */
-}
-
-.coming-soon {
-    font-family: 'Cairo', sans-serif;
-    font-size: 14px;
-    color: #666;
-    margin-left: 10px;
 }
 
 @media (max-width: 600px) {
@@ -64,13 +54,12 @@ body {
         font-size: 20px;
     }
 
-    .button {
-        display: block;
-        margin: 15px auto;
-        width: 80%;
+    .button-container {
+        flex-direction: column;
+        gap: 15px;
     }
 
-    .coming-soon {
-        font-size: 12px;
+    .store-button {
+        width: 120px;
     }
 }
