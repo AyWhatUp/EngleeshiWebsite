@@ -32,11 +32,12 @@ body {
 .button-container {
     display: flex;
     justify-content: center;
+    align-items: center; /* Ensure vertical centering */
     gap: 20px;
 }
 
 .store-button {
-    width: 150px;
+    width: 180px; /* Increased from 150px for desktop */
     transition: opacity 0.3s;
 }
 
@@ -57,9 +58,10 @@ body {
     .button-container {
         flex-direction: column;
         gap: 15px;
+        align-items: center; /* Ensure horizontal centering on mobile */
     }
 
     .store-button {
-        width: 120px;
+        width: 150px; /* Increased from 120px for mobile */
     }
 }
