@@ -37,12 +37,12 @@ body {
 }
 
 .store-button {
-    height: 60px; /* Fixed height to match both buttons */
-    width: auto; /* Allows width to adjust based on aspect ratio */
+    height: 60px;
+    width: auto;
     transition: opacity 0.3s;
 }
 
-@media (max-width: 60px) {
+@media (max-width: 600px) {
     .logo {
         width: 120px;
     }
@@ -58,7 +58,7 @@ body {
     }
 
     .store-button {
-        height: 50px; /* Adjusted height for mobile */
+        height: 50px;
         width: auto;
     }
 }
