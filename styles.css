@@ -32,21 +32,17 @@ body {
 .button-container {
     display: flex;
     justify-content: center;
-    align-items: center; /* Ensure vertical centering */
+    align-items: center;
     gap: 20px;
 }
 
 .store-button {
-    width: 180px; /* Increased from 150px for desktop */
+    height: 60px; /* Fixed height to match both buttons */
+    width: auto; /* Allows width to adjust based on aspect ratio */
     transition: opacity 0.3s;
 }
 
-.store-button.disabled {
-    opacity: 0.5;
-    pointer-events: none; /* Makes the button non-clickable */
-}
-
-@media (max-width: 600px) {
+@media (max-width: 60px) {
     .logo {
         width: 120px;
     }
@@ -58,10 +54,11 @@ body {
     .button-container {
         flex-direction: column;
         gap: 15px;
-        align-items: center; /* Ensure horizontal centering on mobile */
+        align-items: center;
     }
 
     .store-button {
-        width: 150px; /* Increased from 120px for mobile */
+        height: 50px; /* Adjusted height for mobile */
+        width: auto;
     }
 }
